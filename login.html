@@ -8,7 +8,24 @@
 
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
-</head>
+
+    <script type="text/javascript">
+      function dynInput(cbox) {
+       if (cbox.checked) {
+         var input = document.createElement("input");
+         input.type = "text";
+         var div = document.createElement("div");
+         div.id = cbox.name;
+         div.innerHTML = "Text to display for " + cbox.name;
+         div.appendChild(input);
+         document.getElementById("insertinputs").appendChild(div);
+       } else {
+         document.getElementById(cbox.name).remove();
+       }
+     }
+     </script>
+
+  </head>
 <body>
 
     <div class="container" >
@@ -38,7 +55,7 @@
                 <input class="entrada" type="submit" value="Entrar" /> 
               </p>
               
-              <p class="link">
+              <p>
                 Ainda não tem conta?
                 <a class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Cadastre-se</a>
               </p>
@@ -99,7 +116,7 @@
                     <p>Você é um usuário profissional?</p>
                     <input class="select_profissional" type="radio" id="nao_prossional" name="profissional" value="nao" checked>
                     <label for="nao_profissional">Não</label><br>
-                    <input type="radio" id="sim_profissional" name="profissional" value="sim">
+                    <input type="radio" id="sim_profissional" name="profissional" value="sim";>
                     <label class="select_profissional" for="sim_profissional">Sim</label><br>
                   </p>
                   
