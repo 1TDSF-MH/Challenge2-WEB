@@ -18,29 +18,29 @@
           <!--FORMULÁRIO DE LOGIN-->
           <div id="login">
             <form method="post" action=""> 
-              <h1>Login</h1> 
+              <h1 class="th1">Login</h1> 
               <p> 
                 <label for="email_login">Seu e-mail</label>
-                <input id="email_login" name="email_login" required="required" type="text" placeholder="Digite seu e-mail"/>
+                <input class="entrada" id="email_login" name="email_login" required="required" type="text" placeholder="Digite seu e-mail"/>
               </p>
               
               <p> 
                 <label for="senha_login">Sua senha</label>
-                <input id="senha_login" name="senha_login" required="required" type="password" placeholder="Digite sua senha" /> 
+                <input class="entrada" id="senha_login" name="senha_login" required="required" type="password" placeholder="Digite sua senha" /> 
               </p>
               
               <p> 
-                <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                <input class="entrada" type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
                 <label for="manterlogado">Manter-me logado</label>
               </p>
               
               <p> 
-                <input type="submit" value="Entrar" /> 
+                <input class="entrada" type="submit" value="Entrar" /> 
               </p>
               
               <p class="link">
                 Ainda não tem conta?
-                <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Cadastre-se</a>
+                <a class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Cadastre-se</a>
               </p>
             </form>
           </div>
@@ -51,18 +51,73 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div style="text-align: center;" class="modal-header">
+              <h3>Cadastro</h3> 
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <div id="cadastro">
+                <form method="post" action=""> 
+                  <p> 
+                    <label for="nome_cad">Nome</label>
+                    <input class="entrada" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome" />
+                  </p>
+
+                  <p> 
+                    <label for="sobrenome_cad" id="sobrenome_txt">Sobrenome</label>
+                    <input class="entrada" id="sobrenome_cad" name="sobrenome_cad" required="required" type="text" placeholder="Sobrenome" />
+                  </p>
+                  
+                  <p> 
+                    <label for="email_cad">E-mail</label>
+                    <input class="entrada" id="email_cad" name="email_cad" required="required" type="text" placeholder="email@email.com"/> 
+                  </p>
+                  
+                  <p> 
+                    <label for="telefone_cad">Telefone</label>
+                    <input class="entrada" id="telefone_cad" name="telefone_cad" required="required" type="text" placeholder="(xx) 99999-9999"/> 
+                  </p>
+
+                  <p> 
+                    <label for="nascimento_cad">Data de Nascimento</label>
+                    <input class="entrada" id="nascimento_cad" name="nascimento_cad" required="required" type="date" placeholder="(xx) 99999-9999"/> 
+                  </p>
+
+                  <p> 
+                    <label for="genero_cad">Gênero</label>
+                    <select id="genero" name="select">
+                      <option value="sel"> Selecione o Gênero</option>
+                      <option value="fem">Feminino</option>
+                      <option value="masc">Masculino</option>
+                      <option value="outros">Outros</option>
+                    </select>
+                  </p>
+
+                  <p>
+                    <p>Você é um usuário profissional?</p>
+                    <input class="select_profissional" type="radio" id="nao_prossional" name="profissional" value="nao" checked>
+                    <label for="nao_profissional">Não</label><br>
+                    <input type="radio" id="sim_profissional" name="profissional" value="sim">
+                    <label class="select_profissional" for="sim_profissional">Sim</label><br>
+                  </p>
+                  
+                  <p> 
+                    <label for="senha_cad">Senha</label>
+                    <input class="entrada" id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
+                  </p>
+
+                  <p> 
+                    <label for="confirma_senha_cad"> Confirmar Senha</label>
+                    <input class="entrada"  id="confirma_senha_cad" name="confirma_senha_cad" required="required" type="password" placeholder="*****"/>
+                  </p>
+                  
+                  <p> 
+                    <input class="entrada" type="submit" value="Cadastrar" id="cadastrar"/> 
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
