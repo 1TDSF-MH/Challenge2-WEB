@@ -82,3 +82,28 @@ div.content {
       float: none;
     }
 }
+
+/*TEMAS, UPLOAD- POSTAGEM*/
+.temas{
+    margin-top: 30px;
+}
+#customFile{
+    float: right;
+}
+.card-header{
+    width: 1000px;
+}
+.card-body{
+    width: 1000px;
+}
+.card{
+    width: 1000px;
+}
+.gedf-card{
+    width: 1000p;
+}
+
+.h5 m-0{
+    float: left;
+    margin-left: -500px;
+}
