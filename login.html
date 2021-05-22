@@ -9,30 +9,14 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
 
-    <script type="text/javascript">
-      function dynInput(cbox) {
-       if (cbox.checked) {
-         var input = document.createElement("input");
-         input.type = "text";
-         var div = document.createElement("div");
-         div.id = cbox.name;
-         div.innerHTML = "Text to display for " + cbox.name;
-         div.appendChild(input);
-         document.getElementById("insertinputs").appendChild(div);
-       } else {
-         document.getElementById(cbox.name).remove();
-       }
-     }
-     </script>
-
   </head>
 <body>
 
     <div class="container" >
 
-        
+         <!--FORMULÁRIO DE LOGIN-->
+
         <div class="content">      
-          <!--FORMULÁRIO DE LOGIN-->
           <div id="login">
             <form method="post" action=""> 
               <h1 class="th1">Login</h1> 
@@ -64,7 +48,8 @@
         </div>
       </div> 
 
-      <!-- Modal -->
+      <!-- MODAL -->
+      
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -112,9 +97,10 @@
                     </select>
                   </p>
 
+                  <!-- BUTTON QUE MOSTRA OU ESCONDE O CADASTRO DE PROFISSIONAL -->
                   <div>
                     <p>Você é um usuário profissional?</p>
-                    <input class="select_profissional" type="radio" id="nao_prossional" name="profissional" value="nao" checked>
+                    <input type="radio" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" name="profissional" checked>
                     <label for="nao_profissional">Não</label><br>
                     <input type="radio" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" name="profissional">
                     <label class="select_profissional" for="sim_profissional">Sim</label><br>
@@ -123,6 +109,7 @@
                     <div class="col">
                   <div class="collapse" id="collapseExample">
                     <div class="card card-body">
+                      <div class="cadastro">
                      <p> 
                       <label for="telefone_cad">Especialidade: </label>
                       <input class="entrada" id="especialidade" name="especialidade" required="required" type="text" placeholder="Digite sua especialização"/> 
@@ -135,11 +122,14 @@
                       <label for="telefone_cad">Número do documento: </label>
                       <input class="entrada" id="n_doc" name="n_doc" required="required" type="text" placeholder="Digite aqui o número do documento"/> 
                     </p>
-
+                    </div>
                     </div>
                  </div>
                   </div>
                 </div>
+
+                <!-- SENHA E CONFIRMAÇÃO DE SENHA -->
+
                 <div>
                   <p> 
                     <label for="senha_cad">Senha</label>
