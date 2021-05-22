@@ -39,3 +39,43 @@ th, td {
     color: white;
     width: 200px;
 }
+
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    position: absolute;
+    height: 200px;
+    overflow: auto;
+}
+  
+  /* Sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+/* Active/current link */
+.sidebar a.active {
+    background-color: #9b20ccd2;
+    color: white;
+}
+  
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+  
