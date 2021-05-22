@@ -21,11 +21,17 @@
     }
 }
 
+/* Card Post*/
+.card{
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.198);
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
-  
 }
 
 /* Style the links inside the navigation bar */
@@ -36,6 +42,9 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+.textnav{
+    float: right;
 }
 
 /* Change the color of links on hover */
@@ -48,7 +57,7 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
-  
+  width: 200px;
 }
 
 
@@ -62,6 +71,7 @@
 .sidebar {
     margin: 0;
     padding: 0;
+    height: 100%;
     width: 200px;
     background-color: #333;
     position: absolute;
@@ -93,7 +103,6 @@
 .content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
 }
   
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -119,20 +128,15 @@
 .temas{
     margin-top: 30px;
 }
-#customFile{
-    float: right;
-}
-.card-header{
-    width: 1000px;
-}
-.card-body{
-    width: 1000px;
-}
-.card{
-    width: 1000px;
-}
-.gedf-card{
-    width: 1000p;
+input[type="file"] { 
+    display: none; 
+ }
+ 
+.label-bordered {
+    margin-top: 12px;
+    border: 1px solid #727272;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*Curtir*/
