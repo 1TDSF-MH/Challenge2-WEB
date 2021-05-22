@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas</title>
+
+    <link rel="stylesheet" href="../css/temas.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
+</head>
+<body>
+
+<!--Nav-->
+<div class="topnav">          
+    <a class="navbar-brand active" href="../index.html">
+        <img src="../img/among.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+    </a>
+    <div class="textnav">
+        <a href="./index.html">Perfil</a>
+        <a href="#news">Sobre</a>
+        <a href="#contact">Ajuda</a>
+        <a href="#about">Logout</a>
+    </div>
+</div>
+
+
+<!-- Menu Lateral-->
+
+<div class="sidebar" style="height: 120vh;">
+    <a class="active" href="./temas.html">Temas</a>
+    <a href="./ranking.html">Ranking</a>
+    <a href="./chat.html">Chat</a>
+    <a href="./config.html">Configurações</a>
+</div>
+
+<!--EDIT POST ARRUMAR FILE-->
+
+
+<!-- Page content -->
+<div class="content" style="height: 120vh;">
+        
+    <div>
+        <span class="badge badge-primary" style="width: 40px; height: 40px;">EO SOU FELIZ</span>
+        <span class="badge badge-primary">EU SOU INCRIVEL</span>
+        <span class="badge badge-primary">Outros</span>
+    </div>
+
+    <h1>Ten hover effects</h1>
+
+<div class="contentBox">
+  <div id="first" class="buttonBox">
+    <button>Hover One</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="second" class="buttonBox">
+    <button>Hover Two</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="third" class="buttonBox">
+    <button>Hover Three</button>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="fourth" class="buttonBox">
+    <button>Hover Four</button>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="fifth" class="buttonBox">
+    <button>Hover Five</button>
+  </div>
+<!-- </div>
+
+<div class="contentBox"> -->
+  <div id="sixth" class="buttonBox">
+    <button>Hover Six</button>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+
+  <div id="seventh" class="buttonBox">
+    <button>Hover Seven</button>
+  </div>
+
+  <div id="eighth" class="buttonBox">
+    <button>Hover Eight</button>
+  </div>
+
+  <div id="ninth" class="buttonBox">
+    <button>Hover Nine</button>
+  </div>
+
+  <div id="tenth" class="buttonBox">
+    <button>
+      <span>H</span>
+      <span>o</span>
+      <span>v</span>
+      <span>e</span>
+      <span>r</span>
+      <span> </span>
+      <span>T</span>
+      <span>e</span>
+      <span>n</span>
+    </button>
+  </div>
+</div>
+
+    <!--- \\\\\\\Post-->
+    <div class="card gedf-card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                    </div>
+                    <div class="ml-2">
+                    <div class="h5 m-0">@LeeCross</div>
+                        <div class="h7 text-muted">Miracles Lee Cross</div>
+                    </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                            <div class="h6 dropdown-header">Configuration</div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#EditMessage" data-whatever="@mdo">Edit</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#DeleteMessage">Delete</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#ReportMessage">Report</a>             
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+    <!--Modal Edit-->
+    <div class="modal fade" id="EditMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Titulo:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                            
+                        <!--TEMAS SELECIONADOS-->
+                        <div class="temas1"> 
+                            <select id="genero" name="select">
+                                <option value="sel"> Selecione Um Tema</option>
+                                <option value="fem">EO SOU FELIZ</option>
+                                <option value="masc">EU SOU INCRIVEL</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Post</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+  
+            <!-- Modal Delete Message -->
+            <div class="modal fade" id="DeleteMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deletar message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Eu estou fu" readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+                    </div>
+                </div>
+                </div>
+            </div> 
+            
+            <!-- Modal Report Message-->
+            <div class="modal fade" id="ReportMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reportar message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Motivo Do Report"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Report</button>
+                    </div>
+                </div>
+                </div>
+            </div>    
+
+              <div class="card-body">
+                  <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                  <a class="card-link" href="#">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                  </a>
+
+                  <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                      sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                  </p>
+                <div>
+                    <span class="badge badge-primary">EO SOU FELIZ</span>
+                    <span class="badge badge-primary">EU SOU INCRIVEL</span>
+                    <span class="badge badge-primary">Outros</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                  <script>
+                    c = 0
+                    function adicionarLike() {
+                        if(c == 0){
+                        c += 1;}else{
+                            c -= 1;
+                        }
+                        botao.innerHTML = `${c} likes`;
+                    } 
+                   </script> 
+                   
+                  <button id="botao" onclick="adicionarLike()">0 Likes </button>
+                  <a href="./post/comment.html" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                  <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+              </div>
+          </div>
+          <!-- Post /////-->
+
+          
+
+
+
+      </div>
+    
+  </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
