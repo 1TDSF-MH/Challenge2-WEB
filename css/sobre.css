@@ -78,7 +78,9 @@
     height: 200px;
     overflow: auto;
 }
-  
+.c1{
+    height: 100%;
+}  
   /* Sidebar links */
 .sidebar a {
     display: block;
@@ -164,22 +166,4 @@ input[type="file"] {
 
 .temas1{
     margin-top: 20px;
-}
-
-
-
-/* DIV Sobre */
-
-.sobre{
-    margin-left: 50%;
-}
-
-
-
-/*DIV do texto */
-
-.texto{
-    font-size: 15px;
-    color: #000;
-
 }

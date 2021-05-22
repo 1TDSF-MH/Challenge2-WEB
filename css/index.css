@@ -1,6 +1,6 @@
 .c2{
     background-color: #f1f1f1;
-    height: 100vh;
+    height: 116vh;
 }
 
 .h7 {
@@ -71,12 +71,13 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 200px;
     background-color: #333;
     position: absolute;
-    height: 200px;
     overflow: auto;
+}
+.c1{
+    height: 116%;
 }
   
   /* Sidebar links */

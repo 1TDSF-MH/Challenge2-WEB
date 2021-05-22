@@ -2,6 +2,12 @@
     background-color: #f1f1f1;
     height: 100vh;
 }
+@media (max-width:640px){
+    .c2{
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+}
 
 .h7 {
     font-size: 0.8rem;
@@ -78,7 +84,10 @@
     height: 200px;
     overflow: auto;
 }
-  
+.c1{
+    height: 100%;
+}
+
   /* Sidebar links */
 .sidebar a {
     display: block;
@@ -101,7 +110,7 @@
   
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
-    margin-left: 200px;
+    margin-left: 66px;
     padding: 1px 16px;
 }
   
