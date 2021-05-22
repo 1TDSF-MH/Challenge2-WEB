@@ -19,9 +19,9 @@
         Bootstrap
     </a>
     <div class="textnav">
-        <a href="./index.html">Perfil</a>
-        <a href="#news">Sobre</a>
-        <a href="#contact">Ajuda</a>
+        <a href="../navbar/perfil.html">Perfil</a>
+        <a href="../navbar/sobre.html">Sobre</a>
+        <a href="../navbar/ajuda.html">Ajuda</a>
         <a href="#about">Logout</a>
     </div>
 </div>
@@ -29,96 +29,25 @@
 
 <!-- Menu Lateral-->
 
-<div class="sidebar" style="height: 120vh;">
+<div class="sidebar" style="height: 100%;">
     <a class="active" href="./temas.html">Temas</a>
     <a href="./ranking.html">Ranking</a>
-    <a href="./chat.html">Chat</a>
+    <a href="./chat.html">Chat  <span class="badge bg-danger ms-2">9</span> </a>
     <a href="./config.html">Configurações</a>
 </div>
 
-<!--EDIT POST ARRUMAR FILE-->
-
 
 <!-- Page content -->
-<div class="content" style="height: 120vh;">
-        
-    <div>
-        <span class="badge badge-primary" style="width: 40px; height: 40px;">EO SOU FELIZ</span>
-        <span class="badge badge-primary">EU SOU INCRIVEL</span>
-        <span class="badge badge-primary">Outros</span>
+<div class="content c2">
+    
+    <div id="borderTema">
+        <div class="temasButton">
+            <button type="button" class="HashButton button_slide slide_down">TEMA 1</button>
+            <button type="button" class="HashButton button_slide slide_right">TEMA 2</button>
+            <button type="button" class="HashButton button_slide slide_left">TEMA 3</button>
+            <button type="button" class="HashButton button_slide slide_diagonal">TEMA 4</button>
+        </div>
     </div>
-
-    <h1>Ten hover effects</h1>
-
-<div class="contentBox">
-  <div id="first" class="buttonBox">
-    <button>Hover One</button>
-    <div class="border"></div>
-    <div class="border"></div>
-  </div>
-
-  <div id="second" class="buttonBox">
-    <button>Hover Two</button>
-    <div class="border"></div>
-    <div class="border"></div>
-  </div>
-
-  <div id="third" class="buttonBox">
-    <button>Hover Three</button>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-  </div>
-
-  <div id="fourth" class="buttonBox">
-    <button>Hover Four</button>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-  </div>
-
-  <div id="fifth" class="buttonBox">
-    <button>Hover Five</button>
-  </div>
-<!-- </div>
-
-<div class="contentBox"> -->
-  <div id="sixth" class="buttonBox">
-    <button>Hover Six</button>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-    <div class="border"></div>
-  </div>
-
-  <div id="seventh" class="buttonBox">
-    <button>Hover Seven</button>
-  </div>
-
-  <div id="eighth" class="buttonBox">
-    <button>Hover Eight</button>
-  </div>
-
-  <div id="ninth" class="buttonBox">
-    <button>Hover Nine</button>
-  </div>
-
-  <div id="tenth" class="buttonBox">
-    <button>
-      <span>H</span>
-      <span>o</span>
-      <span>v</span>
-      <span>e</span>
-      <span>r</span>
-      <span> </span>
-      <span>T</span>
-      <span>e</span>
-      <span>n</span>
-    </button>
-  </div>
-</div>
 
     <!--- \\\\\\\Post-->
     <div class="card gedf-card">
@@ -126,7 +55,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="mr-2">
-                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="logo">
                     </div>
                     <div class="ml-2">
                     <div class="h5 m-0">@LeeCross</div>
@@ -179,6 +108,14 @@
                                 <option value="outros">Outros</option>
                             </select>
                         </div>
+
+                        <!--Escolher Arquivo -->
+                        <div class="form-group">
+                            <label for="fupload" class="control-label label-bordered">Clique aqui para escolher um arquivo</label>
+                            <div class="nomeArquivo"></div>
+                            <input type="file" id="fupload" name="fupload" class="fupload form-control" />
+                        </div>
+
 
                     </form>
                 </div>
@@ -273,17 +210,8 @@
                   <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
               </div>
           </div>
-          <!-- Post /////-->
-
-          
-
-
-
-      </div>
-    
-  </div>
-  </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

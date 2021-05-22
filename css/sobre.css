@@ -1,6 +1,6 @@
-.content{
+.c2{
     background-color: #f1f1f1;
-    height: 200px;
+    height: 100vh;
 }
 
 .h7 {
@@ -168,3 +168,18 @@ input[type="file"] {
 
 
 
+/* DIV Sobre */
+
+.sobre{
+    margin-left: 50%;
+}
+
+
+
+/*DIV do texto */
+
+.texto{
+    font-size: 15px;
+    color: #000;
+
+}
