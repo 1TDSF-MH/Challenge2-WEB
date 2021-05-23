@@ -1,3 +1,14 @@
+/*Menu lateral and Navbar*/
+
+.c1{
+  height: 95%;
+}
+.c2{
+  background-color: #f1f1f1;
+  height: 95vh;
+}
+
+
 body {
   background-color: #74EBD5;
   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
@@ -38,4 +49,11 @@ body {
 input::placeholder {
   font-size: 0.9rem;
   color: #999;
+}
+
+.teste{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
