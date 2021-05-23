@@ -1,13 +1,7 @@
-.c2{
+/*.c2{
     background-color: #f1f1f1;
-    height: 100vh;
-}
-@media (max-width:640px){
-    .c2{
-        background-color: #f1f1f1;
-        height: 100%;
-    }
-}
+    height: 116vh;
+}*/
 
 .h7 {
     font-size: 0.8rem;
@@ -77,17 +71,15 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 200px;
     background-color: #333;
     position: absolute;
-    height: 200px;
     overflow: auto;
 }
-.c1{
-    height: 100%;
-}
-
+/*.c1{
+    height: 116%;
+}*/
+  
   /* Sidebar links */
 .sidebar a {
     display: block;
@@ -110,7 +102,7 @@
   
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
-    margin-left: 66px;
+    margin-left: 200px;
     padding: 1px 16px;
 }
   
@@ -148,6 +140,22 @@ input[type="file"] {
     border-radius: 5px;
 }
 
+/*Curtir*/
+
+/*#botao {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/df/Facebook_logo_thumbs_up_like_transparent_SVG.svg);
+    background-color: #e7e9f1;
+    color: #385596;
+    background-size: 50px;
+    background-position: 20px 25%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 59px;
+    font-size: 20px;
+    border: 1px solid #a8b4c9;
+    text-align: center;
+    text-indent: 32px;
+}*/
 
 /*DENTRO DO EDIT POST*/
 .file{
@@ -159,58 +167,5 @@ input[type="file"] {
     margin-top: 20px;
 }
 
-.FAQ {
-    margin-top: 30px;
-    display: flex;
-    margin-left: 15%;
-}
 
-ul {
-    list-style: none;
-}
-
-.title {
-    line-height: 50px;
-    margin-top: 30px;
-    display: flex;
-    margin-left: 18%;
-}
-
-.question {
-    font-size: 16px;
-    line-height: 40px;
-    font-weight: bold;
-}
-
-.answer {
-    font-size:14px;
-}
-
-.message {
-    margin-top: 30px;
-    display: flex;
-    margin-left: 18%;
-}
-
-textarea{
-    display: flex;
-    line-height: 20px;
-    width: 50%;
-    padding: 10px;
-    height: 90px;
-    resize: none;
-}
-
-.enviar {
-    display: flex;
-    background-color: #ccc;
-    height: 33px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    width: 80px;
-    margin-left: 1%;
-    margin-top: 5%;
-    text-align: center;
-}
 

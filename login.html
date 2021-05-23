@@ -9,14 +9,30 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
 
+    <script type="text/javascript">
+      function dynInput(cbox) {
+       if (cbox.checked) {
+         var input = document.createElement("input");
+         input.type = "text";
+         var div = document.createElement("div");
+         div.id = cbox.name;
+         div.innerHTML = "Text to display for " + cbox.name;
+         div.appendChild(input);
+         document.getElementById("insertinputs").appendChild(div);
+       } else {
+         document.getElementById(cbox.name).remove();
+       }
+     }
+     </script>
+
   </head>
 <body>
 
     <div class="container" >
 
-         <!--FORMULÁRIO DE LOGIN-->
-
+        
         <div class="content">      
+          <!--FORMULÁRIO DE LOGIN-->
           <div id="login">
             <form method="post" action=""> 
               <h1 class="th1">Login</h1> 
@@ -40,16 +56,16 @@
               </p>
               
               <p>
-                Ainda não tem conta?
-                <a class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Cadastre-se</a>
+                <a class="btn btn-outline-primary button_slide" data-toggle="modal" data-target="#exampleModal">Cadastre-se</a>
               </p>
+  
+
             </form>
           </div>
         </div>
       </div> 
 
-      <!-- MODAL -->
-      
+      <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -127,15 +143,12 @@
                  </div>
                   </div>
                 </div>
-
-                <!-- SENHA E CONFIRMAÇÃO DE SENHA -->
-
-                <div>
+                  
                   <p> 
                     <label for="senha_cad">Senha</label>
                     <input class="entrada" id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
                   </p>
-                </div>
+
                   <p> 
                     <label for="confirma_senha_cad"> Confirmar Senha</label>
                     <input class="entrada"  id="confirma_senha_cad" name="confirma_senha_cad" required="required" type="password" placeholder="*****"/>

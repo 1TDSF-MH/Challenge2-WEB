@@ -9,37 +9,41 @@
     <link href="../css/rank.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
 
+    <style> @import url('../css/origem.css'); </style>
+
 </head>
 <body>
  
 
 <!--Nav-->
 <div class="topnav">          
-    <a class="navbar-brand active" href="./index.html">
+    <a class="navbar-brand active" href="../index.html">
         <img src="../img/among.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Bootstrap
     </a>
     <div class="textnav">
-        <a href="./index.html">Perfil</a>
-        <a href="#news">Sobre</a>
-        <a href="#contact">Ajuda</a>
-        <a href="#about">Logout</a>
+        <a href="../navbar/perfil.html">Perfil</a>
+        <a href="../navbar/sobre.html">Sobre</a>
+        <a href="../navbar/ajuda.html">Ajuda</a>
+        <a href="../menu-lateral/config.html">Logout</a>
     </div>
 </div>
 
 
 <!-- Menu Lateral-->
 
-<div class="sidebar" style="height: 100%; margin-top: -34px;">
-  <a class="active" href="./temas.html">Temas</a>
+<div class="sidebar c1">
+  <a href="./temas.html">Temas</a>
   <a href="./ranking.html">Ranking</a>
   <a href="./chat.html">Chat</a>
-  <a href="./config.html">Configurações</a>
+  <a href="./configs.html">Configurações</a>
 </div>
 
 
+<!-- Page content -->
+<div class="content c2">
 
-    <div style="margin-left: 500px;">
+    <div class="tabela">
         <h2>Ranking</h2>
         <p>Rank dos profissionais mais bem avaliados da plataforma.</p>
         
@@ -115,7 +119,7 @@
         </table>    
     </div>
         
-    
+</div>    
     
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

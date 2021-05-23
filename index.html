@@ -14,13 +14,13 @@
 <!--Nav-->
 <div class="topnav">          
     <a class="navbar-brand active" href="./index.html">
-        <img src="../img/among.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./img/among.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Bootstrap
     </a>
     <div class="textnav">
-        <a href="./index.html">Perfil</a>
-        <a href="#news">Sobre</a>
-        <a href="#contact">Ajuda</a>
+        <a href="./navbar/perfil.html">Perfil</a>
+        <a href="./navbar/sobre.html">Sobre</a>
+        <a href="./navbar/ajuda.html">Ajuda</a>
         <a href="#about">Logout</a>
     </div>
 </div>
@@ -28,16 +28,16 @@
 
 <!-- Menu Lateral-->
 
-<div class="sidebar" style="height: 120vh;">
-  <a class="active" href="./menu-lateral/temas.html">Temas</a>
+<div class="sidebar c1">
+  <a href="./menu-lateral/temas.html">Temas</a>
   <a href="./menu-lateral/ranking.html">Ranking</a>
   <a href="./menu-lateral/chat.html">Chat</a>
-  <a href="#about">Configurações</a>
+  <a href="./menu-lateral/config.html">Configurações</a>
 </div>
 
 
 <!-- Page content -->
-<div class="content" style="height: 120vh;">
+<div class="content c2">
 
           <!--- \\\\\\\Post-->
           
@@ -168,8 +168,12 @@
                                     <option value="outros">Outros</option>
                                   </select>
                             </div>
-                            <div>
-                                <input type="file" class="file"/>
+                                            
+                            <!--Escolher Arquivo -->
+                            <div class="form-group">
+                                <label for="fupload" class="control-label label-bordered">Clique aqui para escolher um arquivo</label>
+                                <div class="nomeArquivo"></div>
+                                <input type="file" id="fupload" name="fupload" class="fupload form-control" />
                             </div>
 
                         </form>

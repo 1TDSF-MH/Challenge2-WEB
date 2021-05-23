@@ -13,8 +13,6 @@
 </head>
 <body>
 
- 
- 
 <!--Nav-->
 <div class="topnav">          
     <a class="navbar-brand active" href="./index.html">
@@ -32,14 +30,147 @@
 
 <!-- Menu Lateral-->
 
-<div class="sidebar" style="height: 120vh;">
+<div class="sidebar c1">
   <a class="active" href="./temas.html">Temas</a>
   <a href="./ranking.html">Ranking</a>
   <a href="./chat.html">Chat</a>
   <a href="#about">Configurações</a>
 </div>
 
-       
+<div class="content c2">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+  <div style="width: 90%; margin-top: 20px; margin-left: 80px; border-radius: 10px;">
+    <div>
+        <!-- Profile widget -->
+        <div class="bg-white shadow rounded overflow-hidden">
+            <div class="px-4 pt-0 pb-4 cover">
+                <div class="media align-items-end profile-head">
+                    <div class="profile mr-3"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." width="130" class="rounded mb-2 img-thumbnail">
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-block">Edit profile</a>
+                    </div>
+                    
+                    <div class="media-body mb-5 text-white">
+                        <h4 class="mt-0 mb-0">Mark Williams</h4>
+                        <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>Psicólogo</p>
+                    </div>
+                    <div>
+                        <a href="./index.html" class="btn btn-outline-dark btn-sm btn-block">Enviar Mensagem</a>
+                    </div>
+                 
+
+                </div>
+            </div>
+            
+            <div class="bg-light d-flex justify-content-end text-center" style="height: 72px;">                
+                <!--
+                <ul class="list-inline mb-0">
+
+                 
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">215</h5><small class="text-muted"> <i class="fas fa-image mr-1"></i>Photos</small>
+                    </li>
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">745</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Followers</small>
+                    </li>
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">340</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Following</small>
+                    </li>
+                </ul>-->
+            </div> 
+            <div class="px-4 py-3">
+                <h5 class="mb-0">Biografia</h5>
+                <div class="p-4 rounded shadow-sm bg-light">
+                    <p class="font-italic mb-0">Web Developer</p>
+                    <p class="font-italic mb-0">Lives in New York</p>
+                    <p class="font-italic mb-0">Photographer</p>
+                </div>
+            </div>
+
+
+            
+            <div class="card-body">
+                <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                <a class="card-link" href="#">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                </a>
+
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                    sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                </p>
+                <div>
+                  <span class="badge badge-primary">EO SOU FELIZ</span>
+                  <span class="badge badge-primary">EU SOU INCRIVEL</span>
+                  <span class="badge badge-primary">Outros</span>
+              </div>
+            </div>
+            <div class="card-footer">
+                <script>
+                  c = 0
+                  function adicionarLike() {
+                      if(c == 0){
+                      c += 1;}else{
+                          c -= 1;
+                      }
+                      botao.innerHTML = `${c} likes`;
+                  } 
+                 </script> 
+                 
+                <button id="botao" onclick="adicionarLike()">0 Likes </button>
+                <a href="./post/comment.html" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+            </div>
+        </div>
+            
+
+
+
+            <!--
+            <div>
+                <div class="d-flex justify-content-center row">
+                    <div class="col-md-11">
+                        <div class="d-flex flex-column comment-section">
+                            <div class="bg-white p-2">
+                                <div class="d-flex flex-row user-info"><img class="rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" width="40" height="40">
+                                    <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="d-flex flex-row fs-12">
+                                    <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span class="ml-1">Like</span></div>
+                                    <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">Comment</span></div>
+                                    <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">Share</span></div>
+                                </div>
+                            </div>
+                            <div class="bg-light p-2">
+                                <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" width="40" height="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                                <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="py-4 px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h5 class="mb-0">Recent photos</h5><a href="#" class="btn btn-link text-muted">Show all</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 mb-2 pl-lg-1"><img src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 pr-lg-1 mb-2"><img src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 pl-lg-1"><img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+   
+</div>       
  
 </body>
 </html>
