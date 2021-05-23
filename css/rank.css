@@ -1,0 +1,23 @@
+/*TABELA*/
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th, td {
+    padding: 15px;
+}
+.tabela{
+    margin-top: 20px;
+}
+
+/*Menu lateral and Navbar*/
+
+.c1{
+    height: 95%;
+}
+.c2{
+    background-color: #f1f1f1;
+    height: 95vh;
+}
