@@ -112,17 +112,36 @@
                     </select>
                   </p>
 
-                  <p>
+                  <!-- BUTTON QUE MOSTRA OU ESCONDE O CADASTRO DE PROFISSIONAL -->
+                  <div>
                     <p>Você é um usuário profissional?</p>
-                    <input class="select_profissional" type="radio" id="nao_prossional" name="profissional" value="nao" checked>
+                    <input type="radio" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" name="profissional" checked>
                     <label for="nao_profissional">Não</label><br>
-                    <input type="radio" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <input type="radio" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" name="profissional">
                     <label class="select_profissional" for="sim_profissional">Sim</label><br>
-                  </p>
+                  </div>
+                  <div class="row">
+                    <div class="col">
                   <div class="collapse" id="collapseExample">
                     <div class="card card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      <div class="cadastro">
+                     <p> 
+                      <label for="telefone_cad">Especialidade: </label>
+                      <input class="entrada" id="especialidade" name="especialidade" required="required" type="text" placeholder="Digite sua especialização"/> 
+                    </p>
+                    <p> 
+                      <label for="telefone_cad">Tipo do documento: </label>
+                      <input class="entrada" id="tipo_doc" name="tipo_doc" required="required" type="text" placeholder="Digite qual é o documento"/> 
+                    </p>
+                    <p> 
+                      <label for="telefone_cad">Número do documento: </label>
+                      <input class="entrada" id="n_doc" name="n_doc" required="required" type="text" placeholder="Digite aqui o número do documento"/> 
+                    </p>
                     </div>
+                    </div>
+                 </div>
+                  </div>
+                </div>
                   
                   <p> 
                     <label for="senha_cad">Senha</label>
